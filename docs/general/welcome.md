@@ -1,3 +1,13 @@
+<div align="center">
+  <br />
+  <p>
+    <a href="https://fnbr.js.org/"><img src="/static/logo.svg" width="546" alt="fnbr.js" id="fnbrjs-logo" style="filter: drop-shadow(0 3px 4px #333);" /></a>
+  </p>
+  <p>
+    <a href="https://nodei.co/npm/fnbr/"><img src="https://nodei.co/npm/fnbr.png?downloads=true&stars=true" alt="NPM info" /></a>
+  </p>
+</div>
+
 # fnbr.js
 A library to interact with fortnites http and xmpp services
 
@@ -5,9 +15,6 @@ A library to interact with fortnites http and xmpp services
 ```
 npm i fnbr
 ```
-
-## Documentation
-The docs can be found [here](https://fnbr.js.org/)
 
 ## Example
 Example: 
@@ -21,15 +28,15 @@ const client = new Client({
 });
 
 client.on('friend:message', (friendMessage) => {
-  console.log(`Message from ${friendMessage.author.displayName}: ${friendMessage.content}`);
-  if(friendMessage.content.toLowerCase().startsWith('ping')) {
+  console.log(`Message from ${friendMessage.friend.displayName}: ${friendMessage.content}`);
+  if (friendMessage.content.toLowerCase().startsWith('ping')) {
     friendMessage.author.sendMessage('Pong!');
   }
 });
 
 (async () => {
   await client.login();
-  console.log(`Logged on ${client.user.displayName}`);
+  console.log(`Logged in as ${client.user.displayName}`);
 })();
 ```
 

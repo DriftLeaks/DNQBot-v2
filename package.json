@@ -1,0 +1,44 @@
+{
+  "name": "fnbr",
+  "version": "1.4.1",
+  "description": "A library to interact with Epic Games' Fortnite HTTP and XMPP services",
+  "main": "./index.js",
+  "scripts": {
+    "test": "mocha mocha.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fnbrjs/fnbr.js.git"
+  },
+  "author": "This Nils",
+  "contributors": [
+    "alextusinean <alex@fortnite.ro>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fnbrjs/fnbr.js/issues"
+  },
+  "homepage": "https://fnbr.js.org",
+  "keywords": [
+    "fortnite",
+    "shop",
+    "news",
+    "stats",
+    "lobbybot",
+    "party",
+    "xmpp",
+    "promises"
+  ],
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "mocha": "^8.2.1"
+  },
+  "dependencies": {
+    "@discordjs/collection": "^0.1.6",
+    "async-exit-hook": "^2.0.1",
+    "axios": "^0.21.1",
+    "stanza": "12.5.0"
+  }
+}
